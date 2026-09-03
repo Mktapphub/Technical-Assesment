@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
     ],
   },
   output: 'standalone',
+   allowedDevOrigins: ['10.200.37.236'],
   transpilePackages: ['motion'],
   turbopack: {},
 };
