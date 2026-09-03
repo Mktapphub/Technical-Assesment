@@ -157,6 +157,7 @@ Rather than reaching for a generic admin-dashboard template, the interface uses 
 
 
 📸 Screenshots :
+<img width="470" height="551" alt="image" src="https://github.com/user-attachments/assets/2522e998-a280-4a66-b09d-c51b14471eec" />
 
 <img width="1366" height="545" alt="image" src="https://github.com/user-attachments/assets/568a94df-b509-4f40-92f3-26ac352fe6b5" />
 <img width="567" height="485" alt="image" src="https://github.com/user-attachments/assets/dac4b042-6c79-411f-9ab5-6bd175ec295d" />
