@@ -162,7 +162,11 @@ It's easy to *claim* "no mocked data" — here's how to actually verify it, in u
 
 ## How I Used AI
 
-I took suggestions from AI tools like ChatGPT and Claude AI throughout the build. Using their input, I designed my workflow around the Agile method of software engineering, breaking the work into iterations across the four Registry modules and taking suggestions from AI at each stage to review and refine the implementation.
+I used AI primarily for planning and architecture rather than as a pair-programmer writing final code, following an Agile-style approach — breaking the work into short iterative cycles across the four Registry modules instead of planning the entire system upfront. At each stage, I used AI to think through that module's data model and edge cases first, then reviewed and refined the plan before moving to the next one, rather than committing to a single big design at the start.
+
+AI's first-pass plans had gaps I had to catch and correct myself: the proposed enrolment statuses and grade classifications didn't match the assessment's exact wording, and an early architectural decision left two frameworks (Vite and Next.js) mixed together instead of committing cleanly to the required stack. I reviewed the structure against the assessment PDF line by line at each iteration, corrected the schema and enum values to match the spec exactly, and made the call to consolidate the project onto a single Next.js App Router implementation.
+
+Some decisions were mine independently of any AI suggestion — for example, the exact overdue-balance rule (`balance > 0 AND past due date AND not Withdrawn`) and choosing `prisma migrate dev` over `db push` for a proper, reviewable migration history.
 
 ## ✨ Features
 
