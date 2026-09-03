@@ -61,7 +61,7 @@ Every workflow from the assessment brief is implemented end-to-end against the r
    npx prisma db push
    ```
 
-4. **Seed the database** with demo data (programmes, students, payments, assessments, submissions, grades, and the Registry login)
+4. **Seed the database** with demo data (programmes, students, payments, assessments, submissions, grades, and the Registry login)— runs [`prisma/seed.ts`](./prisma/seed.ts)
    ```bash
    npx prisma db seed
    ```
@@ -77,7 +77,7 @@ Every workflow from the assessment brief is implemented end-to-end against the r
 
 - [x] Next.js App Router project with working API routes for all four modules
 - [x] `prisma/schema.prisma` with Student, Programme, Payment, Assessment, Submission, Grade, StaffUser models
-- [x] **Seed script with 6 students, 3 programmes, fees, sample payments and grades** (exceeding the assessment's minimum of 5 students / 2 programmes) — including an overdue student, a late submission, and a withheld grade
+- [x] **Seed script ([`prisma/seed.ts`](./prisma/seed.ts)) with 6 students, 3 programmes, fees, sample payments and grades** (exceeding the assessment's minimum of 5 students / 2 programmes) — including an overdue student, a late submission, and a withheld grade
 - [x] Staff view (Registry dashboard) and Student view (self-service portal)
 - [x] `.env.example` with no committed credentials
 
