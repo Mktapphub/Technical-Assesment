@@ -60,7 +60,16 @@ Every workflow from the assessment brief is implemented end-to-end against the r
    npx prisma generate
    npx prisma db push
    ```
+<br><br>
+   or
+**Run migrations against your database**
+   ```bash
+   npx prisma generate
+   npx prisma migrate dev
+   ```
+   This creates the versioned migration files in `prisma/migrations/` and applies them, rather than just syncing the schema with no history (`db push`) — the standard workflow for a real Postgres + Prisma project.
 
+   <br><br>
 4. **Seed the database** with demo data (programmes, students, payments, assessments, submissions, grades, and the Registry login)— runs [`prisma/seed.ts`](./prisma/seed.ts)
    ```bash
    npx prisma db seed
