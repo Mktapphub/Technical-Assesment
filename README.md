@@ -160,11 +160,6 @@ Rather than reaching for a generic admin-dashboard template, the interface uses 
 
 <img width="1366" height="545" alt="image" src="https://github.com/user-attachments/assets/568a94df-b509-4f40-92f3-26ac352fe6b5" />
 <img width="567" height="485" alt="image" src="https://github.com/user-attachments/assets/dac4b042-6c79-411f-9ab5-6bd175ec295d" />
-<img width="1366" height="728" alt="image" src="https://github.com/user-attachments/assets/8a8e7a8c-539b-4d4e-9ff0-d1fad594e961" />
-
-<img width="1343" height="605" alt="image" src="https://github.com/user-attachments/assets/42825a21-32e9-49dc-a396-e3bc6d00ac20" />
-
-
 
 
 
