@@ -4,7 +4,7 @@ A focused web application covering the four core Registry workflows from the PEN
 
 Built for the PEN Global technical assessment (Student Management System - Registry Module).
 
-## ✅ Stack Constraints — All Followed
+## ⚙ Stack Constraints 
 
 - **Next.js 14+ with App Router** — the entire app (frontend + API routes) runs on this; no Pages Router, no separate frontend framework
 - **PostgreSQL with Prisma** — `prisma/schema.prisma` is committed and is the single source of truth for the data model
@@ -13,7 +13,7 @@ Built for the PEN Global technical assessment (Student Management System - Regis
 - **No mocked data in `useState`** — every screen reads and writes through Prisma against a real PostgreSQL database
 - **`.env.example` provided, no credentials committed** — `.env` is git-ignored
 
-## ✅ The Four Modules — All Built
+## 🛠 The Four Modules  I Built
 
 Every workflow from the assessment brief is implemented end-to-end against the real database, not just scaffolded:
 
@@ -117,7 +117,7 @@ There is a single Registry/staff role (no separate faculty/teacher role) — the
 
 ## 📊 Sample Demo Data
 
-> **✅ Assessment requirement met and exceeded:** *"A seed script that loads demo data: at least 5 students, 2 programmes, fees, and sample grades."*
+> ** Assessment requirement met and exceeded:** *"A seed script that loads demo data: at least 5 students, 2 programmes, fees, and sample grades."*
 > This project ships with **6 students** (1 more than required), **3 programmes** (1 more than required), fees assigned to every programme with real payments recorded against them, and **3 sample grades** — including a published and a withheld one to demonstrate the publish/withhold rule in action. 
 <br><br>
 (A seed script that loads demo data: at least 5 students, 2 programmes, fees, and sample grades. )
