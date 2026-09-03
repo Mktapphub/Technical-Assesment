@@ -4,12 +4,42 @@ A focused web application covering the four core Registry workflows from the PEN
 
 Built for the PEN Global technical assessment (Student Management System - Registry Module).
 
-## Tech Stack
+## ✅ Stack Constraints — All Followed
 
-- **Next.js (App Router)** — frontend and API routes in a single project
-- **PostgreSQL** — real relational database (no mocked data in `useState`)
-- **Prisma ORM** — schema, migrations, and typed queries (`prisma/schema.prisma`)
-- **Tailwind CSS** — styling
+- **Next.js 14+ with App Router** — the entire app (frontend + API routes) runs on this; no Pages Router, no separate frontend framework
+- **PostgreSQL with Prisma** — `prisma/schema.prisma` is committed and is the single source of truth for the data model
+- **Styling**: Tailwind CSS
+- **No other backend framework used** — all server logic lives in Next.js API routes
+- **No mocked data in `useState`** — every screen reads and writes through Prisma against a real PostgreSQL database
+- **`.env.example` provided, no credentials committed** — `.env` is git-ignored
+
+## ✅ The Four Modules — All Built
+
+Every workflow from the assessment brief is implemented end-to-end against the real database, not just scaffolded:
+
+**1. Student Enrolment**
+- Create a student record: full name, email, date of birth, programme, academic year, enrolment status
+- Auto-generated unique Student ID (e.g. `SMS-2025-0001`)
+- Enrolment statuses: `Enrolled`, `Deferred`, `Withdrawn`, `Completed`
+- Search and filter by name, ID, programme, or status
+
+**2. Fees & Payments**
+- Fee amount assigned to each student based on their programme
+- Payment transactions recorded: amount, date, reference number
+- Outstanding balance shown in real time
+- Students with an overdue balance flagged on the Registry dashboard
+
+**3. Assessment Submission**
+- Staff create an assessment: title, module, submission deadline
+- Students upload a file (PDF or DOCX) against an open assessment
+- One submission per student per assessment; resubmission allowed before the deadline
+- Late submissions accepted but visually flagged
+
+**4. Marksheet & Results**
+- Staff enter a numeric grade (0–100) per student per assessment
+- Classification applied automatically: `Pass ≥ 40`, `Merit ≥ 60`, `Distinction ≥ 70`
+- Staff can publish or withhold results per student
+- Students see their marksheet only after it's published
 
 ## Setup & Running Locally
 
