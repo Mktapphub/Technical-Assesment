@@ -109,7 +109,11 @@ There is a single Registry/staff role (no separate faculty/teacher role) — the
 ## 📊 Sample Demo Data
 
 > **✅ Assessment requirement met and exceeded:** *"A seed script that loads demo data: at least 5 students, 2 programmes, fees, and sample grades."*
-> This project ships with **6 students** (1 more than required), **3 programmes** (1 more than required), fees assigned to every programme with real payments recorded against them, and **3 sample grades** — including a published and a withheld one to demonstrate the publish/withhold rule in action.
+> This project ships with **6 students** (1 more than required), **3 programmes** (1 more than required), fees assigned to every programme with real payments recorded against them, and **3 sample grades** — including a published and a withheld one to demonstrate the publish/withhold rule in action. 
+<br><br>
+(A seed script that loads demo data: at least 5 students, 2 programmes, fees, and sample grades. )
+
+([`prisma/seed.ts`](./prisma/seed.ts))
 
 So a reviewer doesn't have to go digging through `seed.ts`, here's exactly what's sitting in the database after seeding — 3 programmes, 6 students, and a spread of edge cases built in on purpose:
 
@@ -124,7 +128,7 @@ So a reviewer doesn't have to go digging through `seed.ts`, here's exactly what'
 
 Login with any student's email (e.g. `minhajul.khan@university.edu.bd`) and password `student123` to see their portal, or `admin@university.edu.bd` / `admin123` for the Registry dashboard.
 
-Also seeded, so reviewers can see every edge case working end-to-end without setting anything up:
+Also seeded ([`prisma/seed.ts`](./prisma/seed.ts))  , so reviewers can see every edge case working end-to-end without setting anything up:
 - **A published, top grade** — Minhajul: 82 → Distinction, visible to the student.
 - **A withheld grade** — Nusrat: 64 → Merit, visible to staff only; her portal shows "not yet published" instead of the mark.
 - **A late submission** — flagged automatically since it was uploaded after the assessment deadline.
